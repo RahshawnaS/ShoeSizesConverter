@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#192778"
+    android:clipChildren="true">
+
+    <TextView
+        android:id="@+id/eu_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="60dp"
+        android:textColor="#D50C0C"
+        app:layout_constraintBottom_toTopOf="@+id/eubutton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/eu_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#D50C0C"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/eubutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/uebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Convert"
+        android:textColor="#D50C0C"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:backgroundTint="#A5A7B1"
+        app:layout_constraintBottom_toTopOf="@+id/eulabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/eulabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:background="#A5A7B1"
+        android:text="EU to US"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#D50C0C"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/eu_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/uelabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:background="#A5A7B1"
+        android:text="US to EU"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#D50C0C"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/ue_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/eubutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="Convert"
+        android:textColor="#D50C0C"
+        android:textSize="24sp"
+        android:typeface="normal"
+        app:backgroundTint="#A5A7B1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ue_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#D50C0C"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/uebutton"
+        app:layout_constraintEnd_toStartOf="@+id/ue_output"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A5A7B1"
+        android:text="ShoeSizeConverter"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#D50C0C"
+        android:textSize="36sp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/uelabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
+
+    <TextView
+        android:id="@+id/ue_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="#D50C0C"
+        app:layout_constraintBottom_toTopOf="@+id/uebutton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
